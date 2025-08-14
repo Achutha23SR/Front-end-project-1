@@ -1,0 +1,352 @@
+body{
+    font-family: "EB Garamond", serif;
+    background-color: #f5f5f5;
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 1rem;
+    gap:1rem;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+#Profile-photo img{
+    width: 100%;
+    height: 90%;
+}
+
+#Profile-name{
+    font-weight: bold;
+    color: azure;
+    font-size: 1rem;
+}
+
+.left{
+    background-color: black;
+    height: 90vh;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 1rem;
+}
+
+.nav{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2rem;
+    margin-left: 2.5rem;
+    color: whitesmoke;
+}
+
+.nav > a{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav:hover{
+    color:darkgoldenrod;
+}
+
+.nav > a:hover{
+    color: lightsteelblue;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+article h2:hover{
+    text-decoration-color: goldenrod;
+    font-size: 2rem;
+    transition: 1s;
+}
+#Data h2:hover{
+    text-decoration-color: goldenrod;
+    font-size: 2rem;
+    transition: 1s;
+}
+
+#mainhead{
+    display: flex;
+    justify-content: space-between ;
+}
+
+header > h1{
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: 1000;
+   
+}
+
+header > input{
+    margin-right: 10%;
+    width: 10rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+header > input:focus{
+    outline: none;
+    border: 2px solid lightgreen;
+}
+
+#Board{
+    width: 85%;
+    border-radius: 1rem;
+    background-color: white;
+    margin-left: 2.5rem;
+    padding: 1rem;
+}
+
+#Board img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+#Data h2{
+    margin-top: 100px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+#outer-card
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 10rem;
+    height: 6rem;
+    border-radius: 1rem;
+}
+
+.card i{
+    margin-left: 9rem;
+}
+
+.Cardhead{
+    margin-left: 1rem;
+    font-weight: 3rem;
+    font-family: "EB Garamond", serif;
+}
+
+.Carddata{
+    margin-left: 1rem;
+}
+.card:hover{
+    background-color: blueviolet;
+
+}
+
+.card1{
+    background-color: lightgreen;
+}
+
+.card2{
+    background-color: wheat;
+}
+
+.card3{
+    background-color: pink;
+}
+
+.card4{
+    background-color: lightgrey;
+}
+
+#Users h2{
+    margin-top: 6rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#Users table{
+    width: 90%;
+    border-color: white;
+    border-collapse: collapse;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+table th{
+    background-color: #a39696;
+}
+table th,
+table td{
+    padding: 1rem 6rem;
+    text-align: left;
+}
+
+table tbody tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover{
+    background-color: lightgray;
+}
+
+#Schedule{
+    margin-top: 1rem;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    overflow-y: scroll;
+    height: 25rem;
+}
+
+#Schedule-head{
+    display: flex;
+    justify-content: space-between ;
+}
+
+.act-head{
+    margin-left: 1rem;
+}
+
+.act-body{
+    margin-left: 1rem;
+}
+
+.meeting:nth-child(odd){
+    border-left:5px solid green;
+}
+
+.meeting:nth-child(even){
+    border-left:5px solid violet;
+}
+
+#Contact h2{
+    text-align: center;
+    margin-top: 4rem;
+    text-decoration: underline;
+}
+
+#contact-division{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap :1rem;
+}
+
+#contact-info{
+    text-align: center;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+iframe{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+#contact-info input,textarea,button{
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#contact-info button{
+    background-color: lightgreen;
+    border: none;
+    height: 1.5rem;
+    color: whitesmoke;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a{
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+footer a:hover{
+   color: lightgray;
+}
+
+
+/*All Media Queries*/
+
+@media screen and (max-width:750px){
+    .dashboard{
+        display: block;
+    }
+    .left{
+        position: static;
+        height: auto;
+    }
+    #Profile-photo{
+        width: 15%;
+        position: absolute;
+        top: 0.2rem;
+    }
+    #Profile-name{
+        margin-top: 6rem;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .nav{
+        margin: 0;
+        padding: 0;
+    }
+    .nav i{
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px){
+    .profile{
+        position: relative;
+    }
+    
+    .profile div{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    #Profile-photo img{
+        width: 50%;
+    }
+    .nav{
+        display: none;
+    }
+}
